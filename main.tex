@@ -40,171 +40,172 @@
 
 \begin{document}
 
-\title{Homework}
-\author{Jaime Carlos M Infante}
+\title{Fun with Molding}
+\author{Solution Key}
 \date{\today}
 \maketitle
-\section{Example}
+\section{Pattern Transfer (6 points)}
 
-        
+\subsection{Loctite Exposure} Use the Beer-Lambert law to explain why flipping the glass/Loctite/transparency assembly before UV exposure allows for better separation from the transparency and better adhesion to the glass slide.
+\newline
+\newline
+\textbf{Answer:}
+\newline
+\newline
+Beer-Lambert law:
+\newline
 
-All problems like the following lead eventually to an equation in that simple form.
- 
+\begin{equation}
+\tau = \sum_{i=1}^{N} \tau_{i} = \sum_{i=1}^{N} \sigma_1 \int_{0}^{l} n_i(z)dz
+\end{equation}
+\newline
 
-\subsection{Problem 1}
-Jane spent \$42 for shoes. This was \$14 less than twice what she spent for a blouse. How much was the blouse?
-\subsection{Solution}
+\begin{equation}
+A = \sum_{i=1}^{N} A_i = \sum_{i=1}^{N} \epsilon_1 \int_{0}^{l} c_i(z) dz
+\end{equation}
+\newline
+\newline
+where $N$ = number of attenuating species in material, $\sigma_i$ = attenuating cross section, $n_i$ = number density, $\epsilon_i$ = molar attenuation coefficient, $c_i$ = amount concentration, $l$ = path length of light beam ($=0.48 \pm 0.01$ mm for this experiment)
+\newline
+\newline
+[1] Beer-Lambert law states that light intensity attenuates when passing through glue: \newline
+Longer path length $\rightarrow$ lower transmittance $\rightarrow$ top receives more UV exposure compared to the bottom
+\newline
+\newline
+[1] Loctite is negative photoresist $\rightarrow$ UV strengthens cross-linking $\rightarrow$ Loctite near the glass becomes harder $\rightarrow$ glass-Loctite interface becomes more adhesive than the transparancy-Loctite interface
+
+\subsection{Pattern Resolution} Compare the measured width of the millifluidic channel on the mask and the actual width that was obtained in the Loctite pattern (mean $\pm$ std. dev.). Briefly explain two reasons why the Loctite channel width is different from that of the mask. What two factors impose a lower limit to the pattern resolution? Estimate this size (to an order of magnitude).
+\newline
+\newline
+\textbf{Answer:}
+\newline
+\newline
+[0.5] Mask: 4.05 $\pm$ 0.10 mm
+\newline
+[0.5] Loctite: 3.22 $\pm$ 0.09 mm
+\newline
+\newline
+Reasons for difference in channel width:
+\newline
+[0.5] UV light bends around the mask, providing exposure around mask edges
+\newline
+[0.5] NEED ONE MORE REASON
+\newline
+\newline
+Factors limiting the resolution:
+\newline
+[0.5] thickness of glue layer
+\newline
+[0.5] incidence of light from an angle
+\newline
+\newline
+[1] Order of magnitude is around the thickness of the glue layer
+
+\section{Flow Behavior (4 points)}
+\subsection{Reynolds Number} What is the (approximate) Reynolds number of the flow in the channel of your device? List/show the values of all parameters and measurements in your calculations. 
+\newline
+\newline
+\textbf{Answer:}
+\newline
+\begin{equation}
+Re = \frac{d \rho \nu}{\mu} = \frac{4A}{p} \frac{\rho v}{\mu}
+\end{equation}
+
+\noindent [0.5] Handling error:
+\newline
+$side1 = x \pm \Delta x$
+\newline
+$side2 = y \pm \Delta y$
+\newline
+$A = x * y \pm x*y*(\frac{\Delta x}{x} + \frac{\Delta y}{y})$
+\newline
+\newline
+[0.5] $Re \approx 10-100$ (estimate from video: 5 cm travel in 2 seconds) 
+\newline
+
+\subsection{Flow Rate}
+Estimate the flow rate required to obtain turbulent flow in the millifluidic device. By how many orders of magnitude is this flow rate higher than the actual flow rate in your experiment?
+\newline
+\newline
+\textbf{Answer:}
+\newline
+\newline
+Turbulent flow at $Re \approx 2300 \rightarrow$ two orders of magnitude higher
+\newline
+\newline
+[0.5] Flow velocity $\approx 3 \frac{m}{s}$
+\newline
+\newline
+[0.5] Flow rate = Flow velocity * area $\approx 4.6 *10^-6 \frac{m^3}{s}$
+\newline
+\newline
+***********************************************************************************
+\section{Mixing Behavior (3 points)}
+
+\textbf{Answer:}
+Question 3 (3 points)
+a)	1 point each for presenting the photographs of lotus, oak, CD. Deduct 0.5 point for omitting scale bar.
+\newline
+\newline
+
+\section{Design for Mixing (2 points)}
+
+\textbf{Answer:}
+Question 4 (4 points). 4 points for reasonable hypotheses. Award 1 point if reasoning is unclear or incorrect.
+\newline
+\newline
+
+
+**************************************************************************************
+a)	Scouring tends to trap or nucleate bubbles compared to smooth surface so PDMS near scours has bubbles.
+b)	Cover prevents air from escaping so air that comes out on heating is trapped in the PDMS.
+
+\subsection{Flow Behavior}
 Every word problem has an "unknown number".In this problem,it is the price of the blouse. Always let "x" represent the "unknown number".That is, let "x" answer the question.
-\subsection{Solution part 2}
-Let x,then,be how much she spent for the blouse.The problem states that "This"--that is, \$42--was \$14 less than two times x.
 
-           Here is the Equation: 2x-14= 42
-                                 
-                                 2x=42+14
-                                 
-                                 =56
-                                 
-                                 x=56/2
-                                 
-                                 =28
+\section{Part 2 Write-up}
+\subsection {Molding of microstructures}
+blah
+\newline
+\textbf{Answer:}
+\newline
+\begin{figure} [ht]
+\centering
+\includegraphics[width=.5\textwidth]{lotus.png}
+\caption{\label{fig:lotus}Optical micrographs of PDMS molded on lotus leaf at a) 10x magnification and b) 40x magnification.}
+\end{figure}
 
+\begin{figure} [ht]
+\centering
+\includegraphics[width=.5\textwidth]{oak.png}
+\caption{\label{fig:oak leaf}Optical micrographs of PDMS molded on lotus leaf at a) 10x magnification and b) 40x magnification.}
+\end{figure}
 
+\begin{figure} [ht]
+\centering
+\includegraphics[width=.5\textwidth]{cd.png}
+\caption{\label{fig:cd}Optical micrographs of PDMS molded on CD at a) 10x magnification and b) 40x magnification.}
+\end{figure}
 
+[3] 1 point each for presenting images of lotus, oak and CD at different magnifications. 0.5 point deducted for omitting scale bar
 
+\subsection {Examining Cured PDMS}
+blah
+\newline
+\textbf{Answer:}
+\newline
 
-\section{Example 2}
-There are "b" boys in the class. This is three more than the number four times the number of girls.
-\subsection {Solution}
-Again let "x" represent the unknown number that you are asked to find: Let X be the number of girls. The problem states that "This"--b--is three more than 4 times X. 
-          
-          4x+3=b
-          
-          4x=b-3
-          
-          x=b-3/4
-          
- The solution here is not a number,because it will depend on the value of b. This is a type of a literal equation, which is very common in algaebra.
+a) The region of scoring showed trapped bubbles on its features. Scoured regions act as sites for heterogeneous nucleations for air bubbles to form as the PDMS degases.
+\newline
 
-\section{Example 3. The whole is equal to the sum of the parts}
+[1] Observation of air bubbles at scouring
+[1] Heterogeneous nucleation of air bubbles at the site of scouring during degas
+\newline
 
-The sum of two numbers is 84,and one of them is 12 more than the other. What are the two numbers?
+b) The covered sample presented more bubbles in the mixture. Covering the PDMS did not allow for the system to fully degas upon heating.
+\newline
 
-\subsection{Solution}
-In tis problem, we are asked to find two numbers. Therefore, we must let x be one of them. Let x, then,be the first number.
-
-  we are told that the other number is 12 more,x+12.
-  the problem states that their sum is 84: 
-                         
-                       x+x+12=84
-                       
- The line over x+12 is a grouping symbol called a vinculum. It saves us writing parentheses.
- 
- We have:
- 2x=84-12
-          =72
-          
-          x=72/2
-          
-          x= 36
-          
-          
-This is the first number. Therefore the other number is:
-     x+12= 36+12= 48
-     
-     the sum of 36+48 = 84
-    
-\section{Example 4}     
-
-The sum of two consecutive numbers is 37. What are they?
-
-\subsection{Solution}
-
-Two consecutive numbers are 8 and 9, or 51 and 52. Let x, then, be the first number. Then the number after it is x + 1. The problem states that their sum is 37:  
-
-x + x + 1= 37 
-
-2x = 37-1
-
-= 36 
-
-x = 36 / 2
-
-= 18   
-
-The two numbers are 18 and 19. 
-
-\section{Example 5}
-
-One number is 10 more than another. The sum of twice the smaller plus three times the larger,is 55. What are the two numbers?
-
-\subsection{Solution}
-
-Let x be the smaller number.
-
-Then the larger number is 10 more: x + 10
-
-The problem states: 
-
-2x + 3(x + 10)= 55 
-
-That implies...
-
-2x + 3x + 10 = 55 . Lesson 14 
-
-5x = 55 - 30 = 25 
-
-x = 5 
-
-That's the smaller number.The larger number is 10 more:15 
-
-\section{Example 6} 
-
-Divide \$80 among three people so that the second will have twice as much as the first, and the third will have \$5 less than the second.
-
-\subsection{Solution}
-
-Again qwe are asked to find one more number. We must begin by letting x be how much the first person gets.
-
-Then the second gets twice as much : 2x. 
-
-and the third gets \$5 less than that: 2x-5 .
-
-Their sum is \$80: 
-
-x + 2x + 2x - 5 = 80 
-
-5x = 80 + 5
-
-x = 85 / 2 
-
-= 17 
-
-This is how much the first person gets. Therefore the second gets: 
-
-2x = 34 . 
-
-and the thirs gets 
-
-2x - 5 = 29 . 
-
-The sum of 17, 34, and 29 is in fact 80. 
-
-
-       
-                       
-                       
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
+[1] Observation of more air bubbles for covered PDMS
+[1] Covering PDMS limits the amount of air escaping from PDMS
 
 \end{document}
